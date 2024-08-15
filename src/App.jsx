@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Banner from "./components/Banner.jsx"
+import Logo from './components/Logo.jsx'
+import Aboutus from './components/Aboutus.jsx'
 
 function App() {
   
@@ -10,6 +12,8 @@ function App() {
   return (
     <>
     <Banner/>
+    <Logo/>
+    <Aboutus/>
        
         
       
