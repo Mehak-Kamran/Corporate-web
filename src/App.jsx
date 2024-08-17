@@ -6,6 +6,8 @@ import Banner from "./components/Banner.jsx"
 import Logo from './components/Logo.jsx'
 import Aboutus from './components/Aboutus.jsx'
 import Services from './components/Services.jsx'
+import Calltoaction from './components/Calltoaction.jsx'
+
 
 function App() {
   
@@ -16,6 +18,7 @@ function App() {
     <Logo/>
     <Aboutus/>
     <Services/>
+    <Calltoaction/>
        
         
       
