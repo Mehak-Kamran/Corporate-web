@@ -6,7 +6,7 @@ import { Box, Typography,Grid } from '@mui/material';
 const Calltoaction = () => {
   return (
     <ParallaxProvider>
-      <Box sx={{ position: "relative", height: "400px", overflow: "hidden", marginBottom: "200px" }}>
+      <Box sx={{ position: "relative", height: "400px", overflow: "hidden", marginBottom: "70px" }}>
         
         
         <Parallax speed={-20}>
