@@ -4,7 +4,7 @@ import React from 'react'
 
 const hi = () => {
   return (
-    <Box sx={{backgroundColor:"#FFFFFF" , margin:"15px",marginTop:"2px"}}>
+    <Box sx={{backgroundColor:"#FFFFFF" , margin:"15px"}}>
         <Grid container spacing={2}>
             <Grid item md={6} xs={12}>
                 <Stack direction="column">

@@ -8,6 +8,7 @@ import Aboutus from './components/Aboutus.jsx'
 import Services from './components/Services.jsx'
 import Footer from './components/Footer.jsx'
 import Calltoaction from './components/Calltoaction.jsx'
+import Portfolio from './components/Portfolio.jsx'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <Aboutus/>
     <Services/>
     <Calltoaction/>
+    <Portfolio/>
     <Footer/>
        
         
