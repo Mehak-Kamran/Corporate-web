@@ -148,6 +148,16 @@
 .active-link {
     border-bottom: 10px solid red;
   }
+
+  #font-design {
+    color: #37517E;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
   
 
  

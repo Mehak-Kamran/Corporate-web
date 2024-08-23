@@ -1,10 +1,10 @@
-import { Typography,Grid,Stack,Box } from '@mui/material'
+import { Typography,Grid,Stack,Box,Container } from '@mui/material'
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import React from 'react'
 
 const hi = () => {
   return (
-    <Box sx={{backgroundColor:"#FFFFFF" , margin:"15px",marginTop:"2px"}}>
+    <Container sx={{backgroundColor:"#F5F6F8" }}>
         <Grid container spacing={2}>
             <Grid item md={6} xs={12}>
                 <Stack direction="column">
@@ -22,27 +22,27 @@ const hi = () => {
                     <item> 
                         <Stack direction="row"> 
                             <item><KeyboardArrowRightIcon sx={{fontSize:"15px",marginBottom:"6px"}}/></item>
-                            <item><Typography sx={{fontSize:"15px",fontWeight:"semibold",color:"#3C4C69",marginBottom:"5px"}}>Home</Typography></item>
+                            <item><Typography sx={{fontSize:"15px",fontWeight:"semibold",color:"#3C4C69",marginBottom:"5px"}}><a href="#home"> Home</a></Typography></item>
                             </Stack>
                     </item>
                     <item>
                     <Stack direction="row"> 
                             <item><KeyboardArrowRightIcon sx={{fontSize:"15px",marginBottom:"6px"}}/></item>
-                            <item><Typography sx={{fontSize:"15px",fontWeight:"semibold",color:"#3C4C69",marginBottom:"5px"}}>About Us</Typography></item>
-                            </Stack>
-                    </item>
-
-                    <item>
-                    <Stack direction="row"> 
-                            <item><KeyboardArrowRightIcon sx={{fontSize:"15px",marginBottom:"6px"}}/></item>
-                            <item><Typography sx={{fontSize:"15px",fontWeight:"semibold",color:"#3C4C69",marginBottom:"5px"}}>Services</Typography></item>
+                            <item><Typography sx={{fontSize:"15px",fontWeight:"semibold",color:"#3C4C69",marginBottom:"5px"}}><a href="#aboutus">About Us</a></Typography></item>
                             </Stack>
                     </item>
 
                     <item>
                     <Stack direction="row"> 
                             <item><KeyboardArrowRightIcon sx={{fontSize:"15px",marginBottom:"6px"}}/></item>
-                            <item><Typography sx={{fontSize:"15px",fontWeight:"semibold",color:"#3C4C69",marginBottom:"5px"}}>Terms of Services</Typography></item>
+                            <item><Typography sx={{fontSize:"15px",fontWeight:"semibold",color:"#3C4C69",marginBottom:"5px"}}><a href="#services">Services</a></Typography></item>
+                            </Stack>
+                    </item>
+
+                    <item>
+                    <Stack direction="row"> 
+                            <item><KeyboardArrowRightIcon sx={{fontSize:"15px",marginBottom:"6px"}}/></item>
+                            <item><Typography sx={{fontSize:"15px",fontWeight:"semibold",color:"#3C4C69",marginBottom:"5px"}}> <a href="#portfolio"> Portfolio</a></Typography></item>
                             </Stack>
                     </item>
                 </Stack>
@@ -85,9 +85,9 @@ const hi = () => {
         </Grid>
         <Box>
             <hr/>
-            <Typography sx={{textAlign:"center",marginTop:"20px",fontSize:"15px",marginBottom:"50px"}}>© Copyright Arsha All Rights Reserved</Typography>
+            <Typography sx={{textAlign:"center",marginTop:"20px",fontSize:"15px",padding:"10px"}}>© Copyright Arsha All Rights Reserved</Typography>
         </Box>
-    </Box>
+    </Container>
   )
 }
 

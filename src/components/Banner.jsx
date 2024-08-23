@@ -5,7 +5,7 @@ import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import { motion } from 'framer-motion'; // Import motion
 const Banner = () => {
   return (
-    <Box>
+    <Box id="home">
      <Grid container spacing={2} sx={{
         backgroundColor:"#37517E",
         display:"flex",
