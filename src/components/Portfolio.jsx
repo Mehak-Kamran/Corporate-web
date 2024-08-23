@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Box,Container} from '@mui/material/Box';
+
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
@@ -11,14 +11,31 @@ import portfolio5 from "../assets/images/portfolio5.jpg"
 import portfolio6 from "../assets/images/portfolio6.jpg"
 import portfolio7 from "../assets/images/portfolio7.jpg"
 import portfolio8 from "../assets/images/portfolio8.jpg"
-import { Typography } from '@mui/material';
+import { Typography,Box,Container } from '@mui/material';
+import { motion } from "framer-motion"; 
 
 const Portfolio=()=> {
   return (
-    <Container>
+    <Container sx={{marginBottom:"100px"}}>
 
-<Box>
-    <Typography sx={{ fontWeight:"10px",textAlign:"center"}}> PORTFOLIO</Typography>
+<Box sx={{marginBottom:"20px"}}>
+<motion.div
+                        initial={{ y: -100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ type: "spring", bounce: 0.5, duration: 3, delay: 0.5 }}
+                    >
+    <Typography className="!poppins-bold font" id="portfolio" sx={{
+                color:"#37517E",
+                textAlign:"center",
+                fontSize:"40px",
+                fontWeight:"bold"
+                
+                
+
+                
+            }}> Portfolio</Typography>
+                </motion.div>
 </Box>
 
 <Box sx={{ }}>

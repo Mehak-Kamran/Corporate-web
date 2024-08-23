@@ -3,24 +3,33 @@ import { Grid,Container,Box,Typography,Stack } from '@mui/material'
 import React from 'react'
 import TaskAltIcon from '@mui/icons-material/TaskAlt';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { motion } from "framer-motion"; 
 
 const Aboutus = () => {
   return (
-    <Container sx={{ marginTop:"20px"}}>
+    <Container sx={{ marginTop:"50px"}}>
         <Box sx={{display:"flex",justifyContent:"center",alignItems:"center",marginBottom:"20px",marginTop:"20px"}}>
-            <Typography className="!poppins-bold" sx={{
-                color:"Black",
+        <motion.div
+                        initial={{ y: -100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ type: "spring", bounce: 0.5, duration: 3, delay: 0.5 }}
+                    >
+            <Typography className="!poppins-bold font" sx={{
+                color:"#37517E",
                 display:"flex",
                 justifyContent:"start",
                 alignItems:"start",
                 fontSize:"40px",
+                fontWeight:"bold" 
                 
                 
 
                 
-            }}> About Us</Typography>
+            }} id="aboutus"> About Us</Typography>
+            </motion.div>
         </Box>
-        <Grid container spacing={4}>
+        <Grid container spacing={4} sx={{marginTop:"50px"}}>
             <Grid item xs={12} md={6}>
 <Box>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
