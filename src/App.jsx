@@ -9,6 +9,7 @@ import Services from './components/Services.jsx'
 import Footer from './components/Footer.jsx'
 import Calltoaction from './components/Calltoaction.jsx'
 import Portfolio from './components/Portfolio.jsx'
+import Navbar from './components/Navbar.jsx'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <>
+    <Navbar/>
     <Banner/>
     <Logo/>
     <Aboutus/>
